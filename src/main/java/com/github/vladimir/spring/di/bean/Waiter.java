@@ -2,7 +2,7 @@ package com.github.vladimir.spring.di.bean;
 
 import org.springframework.stereotype.Component;
 
-@Component
+
 public class Waiter {
 
     private final Kitchen kitchen;
