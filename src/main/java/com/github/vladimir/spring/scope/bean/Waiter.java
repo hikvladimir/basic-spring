@@ -17,6 +17,12 @@ public class Waiter {
 
     private int table;
 
+    public void takeOrder(String order, int table) {
+        this.order=order;
+        this.table=table;
+        System.out.println("Waiter with id " +id+" take order "+ order +" from table "+table);
+    }
+
     public Waiter(UUID id) {
         this.id = id;
     }

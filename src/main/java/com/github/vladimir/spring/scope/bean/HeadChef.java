@@ -9,6 +9,11 @@ import org.springframework.stereotype.Component;
 public class HeadChef {
     private String name;
 
+    public void makeOrder(Waiter waiter){
+
+        System.out.println("Head Chef start cooking: Waitr is "+waiter);
+    }
+
     public void setName(String name) {
         this.name = name;
     }
