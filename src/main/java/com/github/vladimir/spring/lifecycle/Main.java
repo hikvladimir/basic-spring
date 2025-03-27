@@ -9,8 +9,11 @@ public class Main {
         AnnotationConfigApplicationContext context=new AnnotationConfigApplicationContext(LifecycleConfiguration.class);
 
         CoffeeShop shop=context.getBean(CoffeeShop.class);
-        shop.makeCoffee();
+       // shop.makeCoffee();
+      // shop.makeCoffee("Latte");
 
+        shop.makeCoffee("Latte", "sugar");
+        shop.makeCoffee("Latte", "milk");
         context.close();
     }
 }
