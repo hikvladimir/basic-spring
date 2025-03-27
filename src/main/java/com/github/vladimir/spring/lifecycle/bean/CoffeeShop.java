@@ -12,13 +12,12 @@ public class CoffeeShop {
 
     private  final ObjectProvider<Coffee> coffeeObjectProvider;
 
-    private final Map<String, Coffee> ingrediens;
+    private final Map<String, Ingredient> ingrediens;
 
-    public CoffeeShop(ObjectProvider<Coffee> coffeeObjectProvider, Map<String, Coffee> ingrediens) {
+    public CoffeeShop(ObjectProvider<Coffee> coffeeObjectProvider, Map<String, Ingredient> ingrediens) {
         this.coffeeObjectProvider = coffeeObjectProvider;
         this.ingrediens = ingrediens;
     }
-
 
 
     @PostConstruct
